@@ -1,0 +1,10 @@
+replicaCount: 2
+image:
+  repository: mazidhossain/visitor-counter
+  tag: latest
+service:
+  type: NodePort
+  port: 80
+redis:
+  image: redis:alpine
+  port: 6379
